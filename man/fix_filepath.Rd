@@ -16,7 +16,7 @@ Fix a copied windows filepath
 }
 \examples{
 \dontrun{
-clipr::write_clip("C:\\\\Users\\\\Test", allow_non_interactive = TRUE)
+clipr::write_clip("C:\\\\Users\\\\Test")
 fix_filepath()
 }
 }
