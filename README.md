@@ -62,7 +62,7 @@ So what this looks like is the following:
 
 ![An image showing a code snippet of the above description. I'm writting a file path to the 
 clipboard via clipr::write_clip, and then fixing it with the fix_filepath function, but 
-also showing it's limits with reproducibility](/assets/images/using_file_func.png)
+also showing it's limits with reproducibility](/tools/images/using_file_func.png)
 
 
 
