@@ -19,8 +19,24 @@ fix_filepath <- function() {
   if(grepl("\\\\", copied_filepath)) {
     fix_the_clip <- gsub("\\\\", "/", copied_filepath)
 
+    return(fix_the_clip)
+  } else {
+
+    warning("Did you copy a windows file path? No double-forward slashes detected")
+
+  }
+}
+
+fix_filepath_addin <- function() {
+
+  if(!interactive()) stop('Cannot use from non-interactive session')
+
+  copied_filepath <- clipr::read_clip()
+
+  if(grepl("\\\\", copied_filepath)) {
+    fix_the_clip <- gsub("\\\\", "/", copied_filepath)
+
     rstudioapi::insertText(paste0('"',fix_the_clip,'"'))
-    #return(fix_the_clip)
   } else {
 
     warning("Did you copy a windows file path? No double-forward slashes detected")

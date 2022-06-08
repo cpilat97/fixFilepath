@@ -1,4 +1,4 @@
 Name: fixFilepath
 Description: Execute the fix_filepath function call
-Binding: fix_filepath
+Binding: fix_filepath_addin
 Interactive: true
