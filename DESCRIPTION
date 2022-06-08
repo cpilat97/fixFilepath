@@ -2,13 +2,26 @@ Package: fixFilepath
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person(given = "Cory", 
+           family = "Pilat", 
+           role = c("aut", "cre"), 
+           email = "cpilat97@gmail.com")
+Description: The idea of this package is fairly simple, as it really  only does
+             one thing: fix a windows file path when you copy it. If you have worked with windows at all and you go to copy a file path 
+             from file explorer and paste it into your r script, you\'ve encountered
+             the problem of it having a single forward slash (\\). Well....in R, this 
+             is an escape charater and causes issues for you. So what do you have to 
+             do? Either go through and add an additional forward slash to escape it 
+             (ie change C:\users to C:\\users), or change the forward slash to a 
+             backslash. Either way, it's some manual filepath manipulation that causes
+             pains. So this package changes those to a single backslash (/) so you can always
+             recopy the filepath and plug it back into your file explorer (if you've
+             tried to put that doubleslash in there....it fails). 
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 URL: https://github.com/cpilat97/fixFilepath
 BugReports: https://github.com/cpilat97/fixFilepath/issues
+Imports: 
+    clipr
