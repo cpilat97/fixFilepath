@@ -70,5 +70,26 @@ also showing it's limits with reproducibility](/tools/images/using_file_func.png
 fixFilepath, and that will paste your corrected file path right in the RScript where your 
 cursor is. You can also assign this to a short key to eliminate a few steps for you. 
 
+* Using the fixFilepath addin: 
+
+![GIF showing the user how to go to Add-in on their RStudio page, scroll down to 
+fixFilepath, selecting that option, and the copied filepath on the clipboard appearing on 
+the RScript text editor as a character value](/tools/images/add_in_gif.gif)
+
+* An static picture of using the Addin: 
+
+![Static picture rather than the above GIF. Shows a red arrow pointing to the "Addins" 
+button in the RStudio tools ribbon, then a red box around the "fixFilepath" option in 
+the dropdown](/tools/images/add_in_fixFilepath.png)
+
+* Finally, and I think this is the most important, is you can assign the addin to a 
+keyboard shortcut so you don't have to do any of the above options. Go to "Tools" in the 
+RStudio options, select "Modify Keyboard Shortcuts", then in the search bar enter "fixFilepath". 
+From there you can assign it to whichever keyboard combination you'd like. I chose 
+CTRL+ALT+V 
+
+![Picture showing the "Modify Keyboard Shortcut" window and assigning a keyboard shortcut 
+to the fixFilepath option.](/tools/images/modify_keyboard_shortcut_addin.png)
+
 
 
