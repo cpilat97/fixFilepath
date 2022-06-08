@@ -11,11 +11,15 @@
 #' fix_filepath()
 #'}
 fix_filepath <- function() {
+
+  if(!interactive()) stop('Cannot use from non-interactive session')
+
   copied_filepath <- clipr::read_clip()
 
   if(grepl("\\\\", copied_filepath)) {
     fix_the_clip <- gsub("\\\\", "/", copied_filepath)
 
+    rstudioapi::insertText(fix_the_clip)
     return(fix_the_clip)
   } else {
 
