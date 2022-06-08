@@ -58,7 +58,15 @@ print(data_path)
 The **main issue** above is if you don't save the printed out data_path, this doesn't become to 
 reproducible later on. So be sure to copy & save the new/updated file path. 
 
-The other option is to use the add-in tool. In RStudio, on the top bar, go to "Addins", 
+So what this looks like is the following: 
+
+![An image showing a code snippet of the above description. I'm writting a file path to the 
+clipboard via clipr::write_clip, and then fixing it with the fix_filepath function, but 
+also showing it's limits with reproducibility](/assets/images/using_file_func.png)
+
+
+
+2. The other option is to use the add-in tool. In RStudio, on the top bar, go to "Addins", 
 fixFilepath, and that will paste your corrected file path right in the RScript where your 
 cursor is. You can also assign this to a short key to eliminate a few steps for you. 
 
