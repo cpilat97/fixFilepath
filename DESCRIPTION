@@ -25,4 +25,5 @@ URL: https://github.com/cpilat97/fixFilepath
 BugReports: https://github.com/cpilat97/fixFilepath/issues
 Imports: 
     clipr, 
+    utils,
     rstudioapi
