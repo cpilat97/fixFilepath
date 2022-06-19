@@ -1,9 +1,9 @@
-Name: fixFilepath
+Name: Fix File Path
 Description: Execute the fix_filepath function call
 Binding: fix_filepath_addin
 Interactive: true
 
-Name: fixFilepath
+Name: Open A Path
 Description: Execute the open_path function call
 Binding: open_path
 Interactive: true
