@@ -6,10 +6,10 @@ Install via Github:
 ### Overview: 
 The idea of this package is to make life a little easier when dealing with copying 
 a file path from Windows File Explorer into an RScript. Generally, when you open 
-windows file explorer and copy to file path, it contains single forward slashes. 
+windows file explorer and copy to file path, it contains single backslashes. 
 
 When you paste these file paths into an Rscript, you'll genearlly receive an error
-because a single forward-slash is used as an escape character (this is particularly
+because a single backslash is used as an escape character (this is particularly
 important when using regex's in string arguments). But we're not looking to do any 
 regex here....we just want to be able to copy a file path to an excel to load!!! 
 
@@ -24,17 +24,17 @@ Error: '\U' used without hex digits in character string starting ""C:\U"
 ```
 
 
-So what to do? Well you could go through and change all the single forward slashes
-to double forward slashes (this would be called "escaping"): 
+So what to do? Well you could go through and change all the single backslashes
+to double backslashes(escaping): 
 
 `"C:\Users\cpilat97\Desktop\my_r_script\raw_dat.xlsx"` **becomes** 
 `"C:\\Users\\cpilat97\\Desktop\\my_r_script\\raw_dat.xlsx"`
 
 And this won't throw an error! **But** that creates another issue...you can't use that
-escaped file path in the file explorer on windows. It creates an error!!!! So you can send that 
-file path to a colleague without changing all the double forward slashes back to single. 
+escaped file path in the file explorer on windows. It creates an error there!!!! So you can't send that 
+file path to a colleague without changing all the double backslashes back to single. 
 
-Another option is to change all the single forward slashes to a single backslash: 
+Another option is to change all the single backslashes to a single forwardslash: 
 `"C:\Users\cpilat97\Desktop\my_r_script\raw_dat.xlsx"` **becomes**
 `"C:/Users/cpilat97/Desktop/my_r_script/raw_dat.xlsx"`
 
@@ -43,7 +43,7 @@ lot of manual changes to make....and creates the issue of you accidentally chang
 a character in the file path. 
 
 This small package hopes to solve all of this by automatically reading the copied filepath 
-from your clipboard and changing all those forward slashes to backslashes for you!
+from your clipboard and changing all those backslashes to forwardslashes for you!
 
 ## Main Uses: 
 
