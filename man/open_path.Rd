@@ -2,25 +2,20 @@
 % Please edit documentation in R/open_path.R
 \name{open_path}
 \alias{open_path}
-\title{open_path. Open path will read a url, file path, directory label, etc.. from
-your clipboard and open that for you. Just note, there's not much safety net
-regarding checking for a valid url, file path, etc... because of the
-variability that may be associated with them. The function will throw an error
-in two cases: not used in an interactive session (ie trying to call from
-command line) or if the path cannot be opened.}
+\title{open_path.}
 \usage{
 open_path()
 }
 \value{
-
-}
-\description{
-open_path. Open path will read a url, file path, directory label, etc.. from
+Open path will read a url, file path, directory label, etc.. from
 your clipboard and open that for you. Just note, there's not much safety net
 regarding checking for a valid url, file path, etc... because of the
 variability that may be associated with them. The function will throw an error
 in two cases: not used in an interactive session (ie trying to call from
 command line) or if the path cannot be opened.
+}
+\description{
+open_path.
 }
 \examples{
 \dontrun{
