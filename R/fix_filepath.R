@@ -27,6 +27,7 @@ fix_filepath <- function() {
     #take the copied filepath and swith the double forward slashes (\\) to a single
     #backslash (/)
     fix_the_clip <- gsub("\\\\", "/", copied_filepath)
+    fix_the_clip <- gsub("^\"|\"$", "", copied_filepath)
 
     #returns the value
     return(fix_the_clip)
