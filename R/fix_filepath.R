@@ -27,7 +27,7 @@ fix_filepath <- function() {
     #take the copied filepath and swith the double forward slashes (\\) to a single
     #backslash (/)
     fix_the_clip <- gsub("\\\\", "/", copied_filepath)
-    fix_the_clip <- gsub("^\"|\"$", "", copied_filepath)
+    fix_the_clip <- gsub("^\"|\"$", "", fix_the_clip)
 
     #returns the value
     return(fix_the_clip)
@@ -53,6 +53,7 @@ fix_filepath_addin <- function() {
 
   if(grepl("\\\\", copied_filepath)) {
     fix_the_clip <- gsub("\\\\", "/", copied_filepath)
+    fix_the_clip <- gsub("^\"|\"$", "", fix_the_clip)
 
     rstudioapi::insertText(paste0('"',fix_the_clip,'"'))
   } else {
