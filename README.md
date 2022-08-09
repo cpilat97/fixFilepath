@@ -3,6 +3,8 @@
 Install via Github: 
 `remotes::install_github('https://github.com/cpilat97/fixFilepath')`
 
+Not a package on CRAN
+
 ### Overview: 
 The idea of this package is to make life a little easier when dealing with copying 
 a file path from Windows File Explorer into an RScript. Generally, when you open 
